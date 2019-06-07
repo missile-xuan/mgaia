@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tacticalmap/', include('tacticalmap.urls')),
+    path('tacticalmap/', include('tacticalmap.urls')),  # 战术地图项目
+    path('blog/', include('blog.urls',namespace='blog')),  # blog 博客项目
 ]
