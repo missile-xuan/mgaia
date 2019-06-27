@@ -141,3 +141,17 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 邮件服务器设置 gmail
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'missilegaia@gmail.com'
+# EMAIL_HOST_PASSWORD = '112233Abcde'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+# 邮件服务器设置 qq
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_USER = '759071738@qq.com'
+EMAIL_HOST_PASSWORD = 'iyqjumjwixjubbgc'
+EMAIL_PORT = 25
