@@ -35,6 +35,6 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     path('', views.index, name='index'), #战术地图首页
 
-    path('<room_name>', views.maproom, name='maproom'),
+    path('<room_name>/', views.maproom, name='maproom'),
 
 ]

@@ -10,7 +10,11 @@ def index(request):
 
 #地图房间处理视图函数
 def maproom(request, room_name):
-    return render(request, 'tacticalmap/maproom.html', {
+    # return render(request, 'tacticalmap/maproom.html', {
+    #     'room_name_json': mark_safe(json.dumps(room_name))
+    # })
+
+    return render(request, 'tacticalmap/canvas.html', {
         'room_name_json': mark_safe(json.dumps(room_name))
     })
 
