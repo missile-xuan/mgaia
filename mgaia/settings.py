@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tacticalmap',#战术地图
+    'tacticalmap.apps.TacticalmapConfig',#战术地图
     'channels',#长连接框架
     'blog.apps.BlogConfig',
 ]

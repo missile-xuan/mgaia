@@ -27,14 +27,11 @@ path() 函数
 
     name: 用来反向获取 URL。
 """
-from django.contrib import admin
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('', views.index, name='index'), #战术地图首页
-
+    path('', views.index, name='index'),    # 战术地图首页
     path('<room_name>/', views.maproom, name='maproom'),
 
 ]
